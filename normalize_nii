@@ -1,0 +1,6 @@
+function new_nii=normalize_nii(nii)
+new_nii=double(nii);
+for i=1:155
+    new_nii(:,:,i)=normalize(new_nii(:,:,i),'zscore');
+end
+end
